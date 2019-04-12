@@ -19,8 +19,8 @@ public class Main extends Application {
             }
         });
 
-        //primaryStage.setTitle("Thread World");
-        primaryStage.setScene(init.getScene());
+        primaryStage.setScene(/*init.getScene()*/new Scene(init.getGridPane(),
+                Constants.APP_WIDTH, Constants.APP_HEIGHT));
         primaryStage.show();
     }
 

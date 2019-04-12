@@ -1,8 +1,6 @@
 package bsuir.epam.lab4.start;
 
-import bsuir.epam.lab4.start.Constants;
 import javafx.geometry.Insets;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
@@ -11,10 +9,9 @@ public class Initialization {
     private GridPane gridPane;
     private Insets insets;
     private Button createThread;
-    private Scene scene;
+    //private Scene scene;
 
     public Initialization() {
-        scene = new Scene(getGridPane(), Constants.APP_WIDTH, Constants.APP_HEIGHT);
         gridPane = new GridPane();
         insets = new Insets(Constants.INSETS_TOP, Constants.INSETS_RIGHT,
                 Constants.INSETS_BOTTOM, Constants.INSETS_LEFT);
@@ -34,9 +31,5 @@ public class Initialization {
 
     public Button getCreateThread() {
         return this.createThread;
-    }
-
-    public Scene getScene() {
-        return this.scene;
     }
 }
