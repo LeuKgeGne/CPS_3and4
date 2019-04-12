@@ -1,6 +1,7 @@
 package bsuir.epam.lab4.controller;
 
 import bsuir.epam.lab4.model.SubThread;
+import bsuir.epam.lab4.start.Constants;
 import javafx.scene.layout.GridPane;
 
 import static jdk.nashorn.internal.objects.NativeMath.random;
@@ -30,12 +31,12 @@ public class Controller {
     }
 
     private static void dbConn() throws InterruptedException{
-        SubThread.sleep(1400);
+        SubThread.sleep(Constants.INT_EX_TIMEOUT);
     }
 
-    private static void showResult() {
-        GridPane subGP = new GridPane();
-      //  Stage localStage = new Stage(new Scene(subGP, ));
-
-    }
+//    private static void showResult() {
+//        GridPane subGP = new GridPane();
+//      //  Stage localStage = new Stage(new Scene(subGP, ));
+//
+//    }
 }

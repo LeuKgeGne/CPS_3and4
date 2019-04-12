@@ -1,6 +1,10 @@
 package bsuir.epam.lab4.model;
 
 import bsuir.epam.lab4.controller.Controller;
+import bsuir.epam.lab4.start.Constants;
+import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 public class SubThread extends Thread{
     private double number1;
@@ -35,4 +39,9 @@ public class SubThread extends Thread{
     public int getThreadNumber() {
         return this.threadNumber;
     }
+
+//    private void createANewWindow() {
+//        GridPane gridPane = new GridPane();
+//        Stage stage = new Stage(new Scene(gridPane, Constants.APP_WIDTH, Constants.APP_HEIGHT))
+//    }
 }
